@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorekeeper</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+
+    <br>
+    <br>
+    <div class="container">
+        <div class="columns">
+            <div class="columns is-half is-offest-one-quarter">
+
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Ping pong Score keeper
+                        </p>
+                        <button class="card-header-icon" aria-label="more options">
+                            <span class="icon">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="title is-1"><span id="player1">0</span> to <span id="player2">0</span></h1>
+                            <label for="playto" class="label is-large is-inline">Ready to Play?</label>
+                            <div id="select is-rounded">
+                                <select id="select">
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="plr1Button" class="is-primary button card-footer-item">Player 1</button>
+                        <button id="plr2Button" class="is-info button card-footer-item">Player 2</button>
+                        <button id="reset" class="is-danger button card-footer-item">Reset</button>
+
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <style>
+        .winner {
+            color: green;
+        }
+
+        .looser {
+            color: red;
+        }
+    </style>
+
+
+
+    <script src="scorekeeper.js"></script>
+</body>
+
+</html>
